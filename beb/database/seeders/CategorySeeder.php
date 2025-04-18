@@ -17,6 +17,9 @@ class CategorySeeder extends Seeder
             "Thịt tươi",
             "Trái cây",
             "Thức ăn nhanh",
+            "Rau củ",
+            "Nước trái cây",
+            "Hải sản",
         ];
 
         foreach ($categories as $category) {
