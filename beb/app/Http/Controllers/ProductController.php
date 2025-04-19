@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use GuzzleHttp\Handler\Proxy;
 use Illuminate\Http\Request;
 use App\Models\Product as ProductModel;
@@ -37,7 +38,8 @@ class ProductController extends Controller
      */
     public function show(string $id)
     {
-        //
+       $product= ProductModel::where('id',$id)->firstOrFail();
+       return response()->json($product,200);
     }
 
     /**
